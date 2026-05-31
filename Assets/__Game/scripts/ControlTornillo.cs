@@ -15,7 +15,7 @@ public class ControlTornillo : MonoBehaviour
 
         if (tornilloSeleccionado != null && tornilloSeleccionado != this)
         {
-            tornilloSeleccionado.rend.material.color = tornilloSeleccionado.colorOriginal;
+            tornilloSeleccionado.rend.material.color = Color.green;
         }
         tornilloSeleccionado = this;
         controlSecuencia.instancia.VerificarSecuencia(this);

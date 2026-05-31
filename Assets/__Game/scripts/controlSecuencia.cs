@@ -6,7 +6,6 @@ public class controlSecuencia : MonoBehaviour
     public static controlSecuencia instancia; // Instancia estática para acceso global
     public ControlTornillo[] SecuenciaTornillos;
     private int pasoActual = 0;
-
     public GameObject PanelInicio; 
     public GameObject PanelFalla; 
     public GameObject PanelSecuenciaCorrecta; 
@@ -61,5 +60,10 @@ public class controlSecuencia : MonoBehaviour
     {
         PanelInicio.SetActive(false); // Ocultar el panel de inicio
         Time.timeScale = 1.0f; // Reanudar el tiempo para comenzar el juego
+    }
+
+    public void CambioEscena()
+    {
+        SceneManager.LoadScene("Game_Play"); // Cambiar a la escena "Escena2"
     }
 }
